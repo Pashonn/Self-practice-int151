@@ -1,0 +1,29 @@
+week ที่ 3 อาจารย์สอนเรื่อง function เพื่อให้เรานำ ไปใช้ได้ใน individal project 
+เพราะว่าจะมีการใช้ funtional programming อีกเยอะ 
+เรื่องนี้ผมพอได้แต่ว่ายังไม่ได้แม่นขนาดนั้น ตัวอย่างเช่น เรื่องที่มันเป็นการเปลี่ยนค่า ที่อาจารย์บอกเรื่อง roommate อะไรนั้น
+ex.
+อย่างอันนี้จะเป็นการค่าของ value ในตัวของ theObject ที่รับ object produc มาแล้วเปลี่ยน value ของ
+key ที่ชื่อว่า mdoel จาก A1001 เป็น A9999 ตามใน function myfunc ที่มันเปลี่ยนเพราะว่า
+** ตามที่ผมเข้าใจ **
+ตัวที่เปลี่บยอันนี้เพราะว่ามันแค่เปลี่ยนค่าของด้านใน object เฉยๆ ไม่ได้เปลี่ยนตัวของ object ทั้งหมด
+value ของ key นั้นเลยเปลี่ยนได้
+//-------------------------------------------------
+function myfunc(theObject){
+    theObject.model = "A9999"
+}
+const produc = {model : "A1001",price:199}
+console.log(produc.model)//A101
+
+myfunc(produc);
+console.log(produc.model)//A9999
+
+
+ส่วนอันนี้เป็นมันไม่ได้เพราะค่าว่ามันเปลี่ยนค่าของ side แต่ว่าไม่ได้เปลี่ยนค่าของตัว theSide มันจบแค่ในฟังก์ชั่นนั้นแค่นั้นแหละ
+
+//-------------------------------------------------
+function square(side){
+    side=9
+}
+let theSide=2
+square(theSide)
+console.log(theSide)//2
