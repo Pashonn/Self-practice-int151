@@ -1,0 +1,10 @@
+import strLength, { Book ,echo, VAT } from "./utility.js"
+const b1 = new Book(1234,'JS Beginnger')
+const b2 = new Book(5678,'Advanced JS')
+console.log(echo("No one perfect"))
+console.log(VAT)
+console.log(strLength("Frontend"))
+console.log(b1)
+console.log(b1.Full())
+console.log(b2)
+console.log(b2.Full())

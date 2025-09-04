@@ -1,0 +1,6 @@
+สัปดาห์นี้อาจารย์สอนเรื่อง module.js การ export code ของเราเพื่อไปใช้ใน ไฟล์อื่นด้วยการ import
+export มีสองแบบคือ default export กับ export Named
+Default export เวลา import จะต้องมี syntax ตามนี้คือ import { value , ... } from "./Path"
+Named export จะมี syntax ตามนี้คือ import (ชื่อที่ต้องการ import) from "./Path"
+ในเรื่องของสัปดาห์นี้และ practice ผมคิดว่าผมเข้าใจในระดับปานกลางถึงมาก 
+แต่อาจะต้องใช้เวลาคิดเยอะเพราะบางที่คิดไม่ค่อยออกครับบบ
